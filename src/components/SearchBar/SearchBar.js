@@ -13,7 +13,8 @@ const styles = {
   root: {
     height: 48,
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    boxShadow: 'none',
   },
   iconButton: {
     opacity: 0.54,
@@ -110,6 +111,7 @@ class SearchBar extends Component {
   render () {
     const { value } = this.state
     const {
+      cancelOnEscape,
       className,
       classes,
       closeIcon,
